@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter Web App</title>
+</head>
+<body>
+    <h1>Image Filter Web App</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Upload an Image:</label>
+        <input type="file" name="file" required>
+        
+        <label for="filter">Choose a Filter:</label>
+        <select name="filter" required>
+            <option value="edge_detection">Edge Detection</option>
+            <option value="sharpen">Sharpen</option>
+            <option value="smooth">Smooth</option>
+            <option value="grey_level">Grey Level Transformation</option>
+        </select>
+        
+        <button type="submit">Apply Filter</button>
+    </form>
+</body>
+</html>
